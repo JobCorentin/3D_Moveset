@@ -16,6 +16,7 @@ public class Player_Ground_Manager : MonoBehaviour
         if (other.transform.CompareTag("floor"))
         {
             player.isGrounded = true;
+            player.playerAnim.SetBool("isJumping", false);
         }
     }
 }
